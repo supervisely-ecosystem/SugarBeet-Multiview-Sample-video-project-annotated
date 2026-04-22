@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/UdBujFN.png" width="250" /> <br>
 
-# Sugar Beet Multiview Tracking Sample
+# Sugar Beet Multiview Images and Video Tracking Sample Project annotated
 
 <p align="center">
   <a href="#overview">Overview</a> •

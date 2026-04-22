@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/UdBujFN.png" width="250" /> <br>
 
-# Sugar Beet Multiview Video Tracking Sample Project Annotated
+# Sugar Beet and Weed Multiview Video Segmentation Sample
 
 <p align="center">
   <a href="#overview">Overview</a> •
@@ -21,7 +21,7 @@
 
 ## Overview
 
-This is an annotated multiview video sample project featuring tractor-mounted camera footage of a sugar beet field capturing growing leaves in both RGB (color) and NIR (near-infrared) spectrums. The project demonstrates object tracking capabilities with pre-annotated masks. The multiview setup provides synchronized RGB and NIR video streams, simulating real-world multi-spectral agricultural monitoring scenarios where different spectral bands help distinguish vegetation from soil and detect plant health variations.
+This is an annotated multiview video sample project featuring tractor-mounted camera footage of a sugar beet field in both RGB (color) and NIR (near-infrared) spectrums. The video captures **sugar beet seedlings and weeds**, with each class annotated separately using pre-annotated masks. The multiview setup provides synchronized RGB and NIR video streams, simulating real-world multi-spectral agricultural monitoring scenarios where different spectral bands help distinguish vegetation from soil and enable precise crop-weed separation.
 
 This sample project is based on data from the [Sugar Beets 2016 dataset](https://datasetninja.com/sugar-beets-2016), an agricultural robot dataset collected on a sugar beet farm near Bonn, Germany, focusing on plant classification, localization, and mapping.
 
@@ -71,7 +71,7 @@ The multiview labeling interface provides synchronized playback of RGB and NIR v
 
 ## Download
 
-[Download ZIP archive](https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/project_videos.zip)
+This project sample in Supervisely format: [Download ZIP archive](https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/project_videos.zip)
 
 ### How to Import
 

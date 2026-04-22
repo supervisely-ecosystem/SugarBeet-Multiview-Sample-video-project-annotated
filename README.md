@@ -11,29 +11,30 @@
 </p>
 
 [![](https://img.shields.io/badge/slack-chat-green.svg?logo=slack)](https://supervisely.com/slack)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/agro-field-tracking-video-sample-annotated)
-[![views](https://app.supervisely.com/img/badges/views/supervisely-ecosystem/agro-field-tracking-video-sample-annotated.png)](https://supervisely.com)
-[![downloads](https://app.supervisely.com/img/badges/downloads/supervisely-ecosystem/agro-field-tracking-video-sample-annotated.png)](https://supervisely.com)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated)
+[![views](https://app.supervisely.com/img/badges/views/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated.png)](https://supervisely.com)
+[![downloads](https://app.supervisely.com/img/badges/downloads/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated.png)](https://supervisely.com)
 
 </div>
 
 ## Overview
 
-This is an annotated multiview sample project featuring tractor-mounted camera data of a sugar beet field capturing growing leaves in both RGB (color) and NIR (near-infrared) spectrums. The project includes both images and videos, demonstrating object tracking capabilities with pre-annotated masks created using automated annotation tools [Serve Segment Anything 2.1](https://dev.internal.supervisely.com/ecosystem/apps/serve-segment-anything-2?id=330) and [AutoTrack](https://docs.supervisely.com/labeling/labeling-toolbox/videos-3.0#auto-tracking), eliminating the need for manual frame-by-frame annotation. The multiview setup provides synchronized RGB and NIR data streams, simulating real-world multi-spectral agricultural monitoring scenarios where different spectral bands help distinguish vegetation from soil and detect plant health variations.
+This is an annotated multiview sample project featuring tractor-mounted camera data of a sugar beet field capturing growing leaves in both RGB (color) and NIR (near-infrared) spectrums. The project includes both images and videos, demonstrating object tracking capabilities with pre-annotated masks. The multiview setup provides synchronized RGB and NIR data streams, simulating real-world multi-spectral agricultural monitoring scenarios where different spectral bands help distinguish vegetation from soil and detect plant health variations.
 
 This sample project is based on data from the [Sugar Beets 2016 dataset](https://datasetninja.com/sugar-beets-2016), an agricultural robot dataset collected on a sugar beet farm near Bonn, Germany, focusing on plant classification, localization, and mapping.
 
-<img src="https://github.com/supervisely-ecosystem/agro-field-tracking-video-sample-annotated/releases/download/v1.0.0/agro-field.png" />
+<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/beetroot.png" />
 
 ## Use cases for farmers
 
 This type of annotation is directly applicable to real-world precision agriculture workflows. Farmers and agri-tech teams can use similar labeled data to:
 
-- **Monitor field boundaries** — automatically detect and track the edges of cultivated plots across seasons to control land use and identify encroachments
-- **Analyze tractor routes** — track machinery paths to optimize coverage, reduce fuel consumption, and detect missed or overlapping passes
-- **Assess road and access conditions** — identify dirt roads and field access routes to plan logistics and maintenance
-- **Detect crop zone changes** — track vegetation patterns over time to spot areas of poor growth, waterlogging, or pest damage early
-- **Support precision farming systems** — feed annotated video data into AI models for autonomous machinery guidance, yield prediction, and soil health analysis
+- **Distinguish crops from weeds** — automatically identify and segment sugar beet plants from weeds to enable targeted weed control and reduce herbicide usage
+- **Enable precision weeding** — train AI models for robotic weed removal systems that can mechanically eliminate weeds without damaging crops
+- **Monitor crop health using multi-spectral data** — leverage NIR imagery alongside RGB to detect early signs of plant stress, disease, or nutrient deficiency
+- **Track plant growth stages** — automatically monitor sugar beet development from emergence to maturity for optimal timing of field operations
+- **Optimize crop spacing and density** — analyze plant distribution patterns to assess field uniformity and identify areas requiring replanting or thinning
+- **Support autonomous farming robots** — provide training data for agricultural robots that navigate fields and perform targeted interventions on individual plants
 
 Using the Supervisely platform, farmers and agronomists can:
 
@@ -42,7 +43,7 @@ Using the Supervisely platform, farmers and agronomists can:
 - Train and deploy custom CV models on their own field data using [Supervisely training pipelines](https://docs.supervisely.com/neural-networks/overview)
 - Build end-to-end labeling and model deployment workflows without leaving the platform
 
-<img src="https://github.com/supervisely-ecosystem/agro-field-tracking-video-sample-annotated/releases/download/v1.0.0/agro-field-demo.gif" />
+<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/beetrootdemo.gif" />
 
 All annotations are stored in Supervisely format, compatible with the platform's video annotation tools and export options.
 
@@ -59,4 +60,4 @@ The original dataset was collected using the BoniRob agricultural robot platform
 
 ## Download
 
-This project sample in Supervisely format: [Download ZIP archive](https://github.com/supervisely-ecosystem/agro-field-tracking-video-sample-annotated/releases/download/v1.0.0/project.zip)
+This project sample in Supervisely format: [Download ZIP archive](https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/project.zip)

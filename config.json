@@ -1,6 +1,6 @@
 {
-    "name": "Sugar Beet Multiview Images and Video Tracking Sample Project annotated",
-    "description": "Annotated multiview sample project with images and videos featuring tractor-mounted camera footage of sugar beet field with growing leaves.",
+    "name": "Sugar Beet Multiview Video Tracking Sample",
+    "description": "Annotated multiview video sample project featuring tractor-mounted camera footage of sugar beet field with growing leaves in RGB and NIR spectrums.",
     "type": "project",
     "categories": [
         "import",

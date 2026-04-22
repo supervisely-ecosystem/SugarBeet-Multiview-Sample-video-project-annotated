@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/UdBujFN.png" width="250" /> <br>
 
-# Sugar Beet Multiview Images and Video Tracking Sample Project annotated
+# Sugar Beet Multiview Video Tracking Sample
 
 <p align="center">
   <a href="#overview">Overview</a> •
@@ -21,7 +21,7 @@
 
 ## Overview
 
-This is an annotated multiview sample project featuring tractor-mounted camera data of a sugar beet field capturing growing leaves in both RGB (color) and NIR (near-infrared) spectrums. The project includes both images and videos, demonstrating object tracking capabilities with pre-annotated masks. The multiview setup provides synchronized RGB and NIR data streams, simulating real-world multi-spectral agricultural monitoring scenarios where different spectral bands help distinguish vegetation from soil and detect plant health variations.
+This is an annotated multiview video sample project featuring tractor-mounted camera footage of a sugar beet field capturing growing leaves in both RGB (color) and NIR (near-infrared) spectrums. The project demonstrates object tracking capabilities with pre-annotated masks. The multiview setup provides synchronized RGB and NIR video streams, simulating real-world multi-spectral agricultural monitoring scenarios where different spectral bands help distinguish vegetation from soil and detect plant health variations.
 
 This sample project is based on data from the [Sugar Beets 2016 dataset](https://datasetninja.com/sugar-beets-2016), an agricultural robot dataset collected on a sugar beet farm near Bonn, Germany, focusing on plant classification, localization, and mapping.
 
@@ -60,53 +60,28 @@ The original dataset was collected using the BoniRob agricultural robot platform
 
 ## Labeling Interface
 
-### Images Project
-
-In the **images project**, the multiview labeling interface displays RGB and NIR images side by side. Each image pair represents a single frame, and **each annotation is unique and independent** — meaning that annotations on one frame do not automatically appear on other frames. This format is ideal for:
-
-- Detailed frame-by-frame analysis
-- Training instance segmentation models
-- Cases where plant appearance varies significantly between frames
-
-<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/images_li.png" />
-
-### Videos Project
-
-In the **videos project**, the multiview interface provides synchronized playback of RGB and NIR video streams. Annotations use **object tracking** — when you annotate an object on one frame, it is automatically tracked across subsequent frames, maintaining the same object ID throughout the video. This approach:
+The multiview labeling interface provides synchronized playback of RGB and NIR video streams. Annotations use **object tracking** — when you annotate an object on one frame, it is automatically tracked across subsequent frames, maintaining the same object ID throughout the video. This approach:
 
 - Significantly reduces annotation time
 - Enables temporal analysis and motion tracking
 - Maintains object identity across the entire video sequence
+- Allows tracking of plant growth and changes over time
 
 <img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/beetrootdemo.gif" />
 
-## Source Dataset & License
-
-This sample project is derived from the **Sugar Beets 2016** dataset:
-
-- **Dataset Homepage**: [Sugar Beets 2016 on Dataset Ninja](https://datasetninja.com/sugar-beets-2016)
-- **Original Source**: [University of Bonn](https://www.ipb.uni-bonn.de/data/sugarbeets2016/)
-- **License**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
-- **Citation**: Chebrolu, N., Lottes, P., Schaefer, A., Winterhalter, W., Burgard, W., & Stachniss, C. (2017). Agricultural robot dataset for plant classification, localization and mapping on sugar beet fields. _The International Journal of Robotics Research_.
-
-The original dataset was collected using the BoniRob agricultural robot platform equipped with multi-spectral cameras, RGB-D sensors, lidar, and GPS sensors over a three-month period in spring 2016.
-
 ## Download
 
-This project is available in two formats in Supervisely format:
-
-- **Video project** (with tracking annotations): [Download ZIP archive](https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/project_videos.zip)
-- **Images project** (frame-by-frame annotations): [Download ZIP archive](https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/project_images.zip)
+[Download ZIP archive](https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/project_videos.zip)
 
 ### How to Import
 
-Since this is a **multiview project** with synchronized RGB and NIR data streams, follow these steps to import it correctly:
+Since this is a **multiview video project** with synchronized RGB and NIR video streams, follow these steps to import it correctly:
 
 1. Go to **Projects** in your Supervisely workspace
 2. Click **+ New** → **New Project**
-3. Choose the data type: **Videos** or **Images** (depending on which archive you downloaded)
+3. Choose the data type: **Videos**
 4. In the **Labeling interface** select **Multiview**
 5. Upload the downloaded ZIP archive
-6. The multiview structure (RGB + NIR pairs) will be automatically preserved
+6. The multiview structure (RGB + NIR video pairs) will be automatically preserved
 
-<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/import.png" />
+<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/import_v.png" />

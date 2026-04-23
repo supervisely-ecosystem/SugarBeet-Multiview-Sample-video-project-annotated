@@ -13,9 +13,9 @@
 </p>
 
 [![](https://img.shields.io/badge/slack-chat-green.svg?logo=slack)](https://supervisely.com/slack)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated)
-[![views](https://app.supervisely.com/img/badges/views/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated.png)](https://supervisely.com)
-[![downloads](https://app.supervisely.com/img/badges/downloads/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated.png)](https://supervisely.com)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/sugarbeet-multiview-sample-video-project-annotated)
+[![views](https://app.supervisely.com/img/badges/views/supervisely-ecosystem/sugarbeet-multiview-sample-video-project-annotated.png)](https://supervisely.com)
+[![downloads](https://app.supervisely.com/img/badges/downloads/supervisely-ecosystem/sugarbeet-multiview-sample-video-project-annotated.png)](https://supervisely.com)
 
 </div>
 
@@ -25,7 +25,7 @@ This is an annotated multiview video sample project featuring tractor-mounted ca
 
 This sample project is based on data from the [Sugar Beets 2016 dataset](https://datasetninja.com/sugar-beets-2016), an agricultural robot dataset collected on a sugar beet farm near Bonn, Germany, focusing on plant classification, localization, and mapping.
 
-<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/beetroot.png" />
+<img src="https://github.com/supervisely-ecosystem/sugarbeet-multiview-sample-video-project-annotated/releases/download/v1.0.0/beetroot.png" />
 
 ## Use cases for farmers
 
@@ -67,11 +67,11 @@ The multiview labeling interface provides synchronized playback of RGB and NIR v
 - Maintains object identity across the entire video sequence
 - Allows tracking of plant growth and changes over time
 
-<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/beetrootdemo.gif" />
+<img src="https://github.com/supervisely-ecosystem/sugarbeet-multiview-sample-video-project-annotated/releases/download/v1.0.0/beetrootdemo.gif" />
 
 ## Download
 
-This project sample in Supervisely format: [Download ZIP archive](https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/project_videos.zip)
+This project sample in Supervisely format: [Download ZIP archive](https://github.com/supervisely-ecosystem/sugarbeet-multiview-sample-video-project-annotated/releases/download/v1.0.0/project_videos.zip)
 
 ### How to Import
 
@@ -84,4 +84,4 @@ Since this is a **multiview video project** with synchronized RGB and NIR video 
 5. Upload the downloaded ZIP archive
 6. The multiview structure (RGB + NIR video pairs) will be automatically preserved
 
-<img src="https://github.com/supervisely-ecosystem/SugarBeet-Multiview-Sample-project-annotated/releases/download/v1.0.0/import_v.png" />
+<img src="https://github.com/supervisely-ecosystem/sugarbeet-multiview-sample-video-project-annotated/releases/download/v1.0.0/import_v.png" />
